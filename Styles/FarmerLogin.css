@@ -1,0 +1,130 @@
+/* Import new fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+	position: relative;
+	background-image: url(../Images/Website/FarmerLogin.jpg);
+	text-align: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Redesigned container with animations */
+#a {
+	text-align: center;
+	margin: 5% auto;
+	max-width: 40%;
+	min-width: 20%;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s, box-shadow 0.3s;
+	animation: slideIn 1s ease-out;
+}
+
+#a:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Redesigned button with animations and transitions */
+#x {
+	font-size: 30px;
+	border-radius: 25px;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 15px 30px;
+	border: 2px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s, font-size 0.3s, color 0.3s;
+	animation: buttonFadeIn 1.2s ease-out;
+}
+
+#x:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	font-size: 35px;
+	background-color: #000;
+	color: #fff;
+	transform: scale(1.05);
+}
+
+/* Input styles with subtle focus effects */
+input {
+	font-size: 20px;
+	padding: 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	outline: none;
+	transition: border-color 0.3s;
+}
+
+input:focus {
+	border-color: #9bf804;
+}
+
+/* Redesigned forgot password text */
+#forgotPassword {
+	margin: auto;
+	float: left;
+	font-size: 20px;
+	color: #fff;
+	transition: color 0.3s;
+}
+
+#forgotPassword:hover {
+	color: #9bf804;
+}
+
+/* Enhanced link styles with smooth transitions */
+#link {
+	color: rgb(246, 248, 246);
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: green;
+	padding: 10px 20px;
+	border-radius: 16px;
+	border: 2px solid rgb(3, 66, 34);
+	width: 44%;
+	display: inline-block;
+	text-align: center;
+	transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+	animation: linkFadeIn 1.5s ease-out;
+}
+
+#link:hover {
+	background-color: rgb(3, 66, 34);
+	color: #fff;
+	border-color: green;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes slideIn {
+	from { transform: translateY(-50px); opacity: 0; }
+	to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes buttonFadeIn {
+	from { opacity: 0; transform: translateY(30px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes linkFadeIn {
+	from { opacity: 0; transform: translateY(30px); }
+	to { opacity: 1; transform: translateY(0); }
+}
